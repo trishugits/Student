@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Student Details</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
+</head>
+<body>
+<div class="container">
+    <h1>Student Details</h1>
+    <p>ID: <span th:text="${student.id}"></span></p>
+    <p>Name: <span th:text="${student.name}"></span></p>
+    <p>Marks: <span th:text="${student.marks}"></span></p>
+    <p>Average Marks: <span th:text="${averageMarks}"></span></p>
+    <a href="/students">Back to Students List</a>
+</div>
+</body>
+</html>
